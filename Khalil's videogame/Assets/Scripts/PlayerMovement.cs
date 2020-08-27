@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         h = Input.GetAxisRaw("Horizontal");
         rb2d.velocity = Vector2.right * h * speed;
            
-        if (Input.GetKey(KeyCode.Space) && alreadyjumping)
+        if (Input.GetKey(KeyCode.UpArrow) && alreadyjumping)
         {
             rb2d.AddForce(Vector2.up * upwardspeed);
             alreadyjumping = false;
