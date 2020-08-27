@@ -21,7 +21,7 @@ public class EnemySpawner : MonoBehaviour
 
     public void Spawn()
     {
-        Instantiate(enemyPrefab, new Vector2(Random.Range(-8, 9), transform.position.y), enemyPrefab.transform.rotation).GetComponent<EnemyMovement>().target = target;
+        Instantiate(enemyPrefab, new Vector2(Random.Range(-6, 7), transform.position.y), enemyPrefab.transform.rotation).GetComponent<EnemyMovement>().target = target;
     }
 
 
